@@ -9,9 +9,9 @@ struct Node {
 
 int head[MAXN], CNT;
 
-void init(int m) {
+void init(int n) {
     CNT = 0;
-    memset(head, NIL, sizeof(int) * (m + m + 5));
+    memset(head, NIL, sizeof(int) * (n + 5));
 }
 
 void add(int u, int v, int w) {
