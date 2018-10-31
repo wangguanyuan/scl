@@ -1,0 +1,14 @@
+double solve(double x1,double y1,double x2,double y2,double r1,double r2)
+{
+    double d=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    if(d>r1+r2)
+        return 0;
+    if(r1>=d+r2)
+        return PI*r2*r2;
+    if(r2>=d+r1)
+        return PI*r1*r1;
+    double angle1=acos((r1*r1+d*d-r2*r2)/(2*r1*d));
+    double angle2=acos((r2*r2+d*d-r1*r1)/(2*r2*d));
+    return angle1*r1*r1+angle2*r2*r2-r1*d*sin(angle1);
+
+}
