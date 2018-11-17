@@ -8,17 +8,19 @@
 #include<map>
 #include<set>
 #include<cstdio>
-#define ll  long long int
+#include <cstring>
+
 using namespace std;
-#define MAXN 2005
-#define MAXE 2005
-#define NIL -1
-#define INF 0x3f3f3f3f
+typedef long long ll;
+const int MAXN = 2005;
+const int MAXE = 2 * MAXN;
+const int NIL = -1;
+const int INF = 0x3f3f3f3f;
 
 
 int main()
 {
 
-
+    
     return 0;
 }
